@@ -53,7 +53,7 @@ a:hover {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -71,6 +71,8 @@ a:hover {
   padding: 11px 0;
   border-bottom: 1px solid #898989;
   position: relative;
+  width: 100%;
+  margin: 0;
 }
 .header .navigation-links {
   padding: 0;
@@ -506,6 +508,213 @@ a:hover {
   margin-bottom: 0;
   font-size: 14px;
   line-height: normal;
+}
+
+.varieties-wrapper {
+  margin: 60px 0;
+  position: relative;
+  z-index: 1;
+}
+.varieties-wrapper .varieties-leaf1 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  left: 170px;
+  top: -50px;
+  z-index: 2;
+}
+.varieties-wrapper .varieties-leaf2 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  right: 45px;
+  top: 50%;
+  z-index: 2;
+}
+.varieties-wrapper .varieties-leaf3 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  right: 525px;
+  bottom: 20px;
+  z-index: 2;
+}
+.varieties-wrapper .varieties-leaf4 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  left: 0px;
+  bottom: -100px;
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  z-index: 5;
+}
+
+.varieties {
+  column-width: 255px;
+  column-gap: 30px;
+  width: 100%;
+}
+.varieties .card {
+  border: none;
+  width: 255px;
+  margin: 0 2px 15px;
+  padding: 20px;
+  padding-bottom: 10px;
+  display: inline-block;
+  column-break-inside: avoid;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.varieties .card:nth-child(1) {
+  background: #e1f7ea;
+  margin-top: 40px;
+}
+.varieties .card:nth-child(2) {
+  background: #e3f5fe;
+}
+.varieties .card:nth-child(3) {
+  background: #fdf7d3;
+}
+.varieties .card:nth-child(4) {
+  background: #ffeded;
+}
+.varieties .card:nth-child(5) {
+  background: #f8e8ff;
+  margin-top: 20px;
+}
+.varieties .card:nth-child(6) {
+  background: #f4f4f4;
+}
+.varieties .card:nth-child(7) {
+  background: #e8fcff;
+  margin-top: 70px;
+}
+.varieties .card:nth-child(8) {
+  background: #f7ffe8;
+}
+.varieties .card h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: normal;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+.varieties .card a {
+  margin-top: 5px;
+  display: block;
+  transition: all 0.3s;
+  color: #898989;
+}
+.varieties .card a:hover {
+  transition: all 0.3s;
+  color: #1485e6;
+  text-shadow: 0px 0px 1px #1485e6;
+  text-decoration: underline;
+}
+.varieties .card img {
+  width: 155px;
+  height: auto;
+  margin: 15px -20px 20px auto;
+  display: block;
+  border-bottom-left-radius: 10px;
+  filter: drop-shadow(-6px 6px 10px rgba(0, 0, 0, 0.1));
+}
+
+.catalog-field {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding: 60px 0 180px;
+}
+.catalog-field .catalog-bckg1 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../images/bckg2.jpg");
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 70% 15%;
+  border-top-right-radius: 70% 15%;
+  border-bottom-left-radius: 70% 15%;
+  border-bottom-right-radius: 70% 15%;
+}
+.catalog-field .catalog-bckg2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+  right: 0;
+  top: 0;
+  background-image: url("../images/lines.png");
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+.catalog-field .catalog-leaf1 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  left: 390px;
+  top: 145px;
+  z-index: 3;
+}
+.catalog-field .catalog-leaf2 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 45%;
+  z-index: 3;
+}
+.catalog-field .catalog-leaf3 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  right: 90px;
+  top: 50%;
+  z-index: 3;
+}
+.catalog-field .catalog-leaf4 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  left: 60px;
+  top: 60%;
+  z-index: 3;
+}
+.catalog-field .catalog-leaf5 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  right: 90px;
+  bottom: 0;
+  z-index: 3;
+}
+.catalog-field .catalog-leaf6 {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  left: 35%;
+  bottom: -20px;
+  z-index: 3;
+}
+.catalog-field .container {
+  position: relative;
+  z-index: 4;
 }
 
 /*# sourceMappingURL=styles.css.map */
