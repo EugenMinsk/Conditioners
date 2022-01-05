@@ -315,6 +315,12 @@ a:hover {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.greeting .greeting-call .phone:hover {
+  transition: all 0.5s;
+  color: #1485e6;
+  text-shadow: 1px 0 0 #000;
 }
 .greeting .greeting-call .networks {
   display: flex;
@@ -333,10 +339,20 @@ a:hover {
   min-width: 19px;
   height: 19px;
   margin-right: 7px;
+  transition: all 0.5s;
 }
 .greeting .greeting-call .networks a p {
   margin: 0;
   line-height: normal;
+  transition: all 0.5s;
+}
+.greeting .greeting-call .networks a:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.greeting .greeting-call .networks a:hover p {
+  text-shadow: 1px 0 0 blue;
+  transition: all 0.5s;
 }
 .greeting .greeting-call .btn-wrapper {
   position: relative;
@@ -795,7 +811,21 @@ a:hover {
 .catalog-field .container .catalog-filtres ul li:last-child::after {
   display: none;
 }
+.catalog-field .container .catalog-filtres ul li.active {
+  border-bottom: 1px solid;
+  text-shadow: 1px 0 0 black;
+}
 
+.catalog-slider {
+  /* display: none; */
+  opacity: 0;
+  height: 0;
+}
+.catalog-slider.active-tab {
+  /*  display: block; */
+  opacity: 1;
+  height: auto;
+}
 .catalog-slider .catalog-slide {
   width: auto;
   max-width: 255px;
@@ -1067,8 +1097,16 @@ a:hover {
   align-items: center;
   border-right: 1px dashed #898989;
 }
+.manufacturers .manufacturers-list .manufacturers-list__string .manufacturers-list__item img {
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
 .manufacturers .manufacturers-list .manufacturers-list__string .manufacturers-list__item:last-child {
   border-right: none;
+}
+.manufacturers .manufacturers-list .manufacturers-list__string .manufacturers-list__item:hover img {
+  filter: grayscale(0%);
+  transition: all 0.5s;
 }
 .manufacturers .manufacturers-list .manufacturers-list__string:first-child {
   border-bottom: 1px dashed #898989;
@@ -1082,6 +1120,7 @@ a:hover {
   display: flex;
   align-items: center;
   width: max-content;
+  transition: 0.3s;
 }
 .manufacturers .manufacturers-all::after {
   position: absolute;
@@ -1093,6 +1132,10 @@ a:hover {
   width: 32px;
   height: 11px;
   left: calc(100% + 20px);
+}
+.manufacturers .manufacturers-all:hover {
+  transition: 0.3s;
+  text-shadow: 1px 0 0 #1485e6;
 }
 
 .delivery {
@@ -1500,6 +1543,13 @@ a:hover {
   justify-content: space-between;
   padding-bottom: 20px;
 }
+.footer .footer-info a {
+  transition: all 0.5s;
+}
+.footer .footer-info a:hover {
+  transition: all 0.5s;
+  color: #1485e6;
+}
 .footer .footer-info .links {
   display: flex;
   flex-direction: column;
@@ -1516,6 +1566,12 @@ a:hover {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.footer .footer-info .contacts .phone:hover {
+  transition: all 0.5s;
+  color: #1485e6;
+  text-shadow: 1px 0 0 #000;
 }
 .footer .footer-info .contacts .networks {
   display: flex;
@@ -1535,10 +1591,20 @@ a:hover {
   min-width: 19px;
   height: 19px;
   margin-right: 7px;
+  transition: all 0.5s;
 }
 .footer .footer-info .contacts .networks a p {
   margin: 0;
   line-height: normal;
+  transition: all 0.5s;
+}
+.footer .footer-info .contacts .networks a:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.footer .footer-info .contacts .networks a:hover p {
+  text-shadow: 1px 0 0 blue;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 1150px) {
@@ -1646,13 +1712,27 @@ a:hover {
   }
 
   .faq .faq-question1 {
-    left: 0;
+    left: -20px;
+    top: -20px;
   }
   .faq .faq-question2 {
     right: 0;
+    top: 110px;
   }
   .faq .faq-question4 {
-    left: 20%;
+    left: -70px;
+  }
+  .faq .faq-question5 {
+    display: none;
+  }
+  .faq .absolute::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    left: 0;
+    top: 0;
   }
   .faq .faq-leaf4 {
     right: 0;
@@ -1949,6 +2029,19 @@ a:hover {
   .footer .footer-info .logo {
     width: 100%;
     margin-right: 0;
+  }
+
+  .faq .faq-question1 {
+    display: none;
+  }
+  .faq .faq-question2 {
+    top: 0;
+  }
+  .faq .faq-question4 {
+    bottom: 210px;
+  }
+  .faq .faq-leaf3 {
+    display: none;
   }
 }
 @media screen and (max-width: 400px) {
